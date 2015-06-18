@@ -280,6 +280,9 @@ public:
 
 	/// Set gravity with direct floats.
 	void SetGravity(float32 gravityX, float32 gravityY);
+
+	int GetReasonableParticleIterations(float32 timeStep) const { return CalculateReasonableParticleIterations(timeStep); }
+
 #endif // LIQUIDFUN_EXTERNAL_LANGUAGE_API
 
 private:

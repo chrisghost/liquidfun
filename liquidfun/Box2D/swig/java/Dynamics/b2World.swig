@@ -38,6 +38,8 @@ public:
             int32 particleIterations);
     int32 GetBodyCount() const;
     b2Body* GetBodyList();
+    int32 GetReasonableParticleIterations(float32 timeStep) const;
+
     b2ParticleSystem* CreateParticleSystem(const b2ParticleSystemDef* def);
     void SetGravity(float32 gravityX, float32 gravityY);
     void QueryShapeAABB(b2QueryCallback *callback, const b2Shape &shape, const b2Transform &xf) const;
