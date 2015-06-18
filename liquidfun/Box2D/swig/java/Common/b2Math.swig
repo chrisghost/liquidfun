@@ -31,6 +31,8 @@ struct b2Vec2 {
 /// b2Transform struct
 struct b2Transform {
     b2Transform();
+
+    void Set(float32 x, float32 y, float32 r);
     void SetIdentity();
     float32 GetPositionX();
     float32 GetPositionY();

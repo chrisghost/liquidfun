@@ -445,6 +445,7 @@ struct b2Transform
 
 	/// Get rotation angle.
 	float32 GetAngle() const { return q.GetAngle(); }
+	void Set(float32 x, float32 y, float32 angle) { Set(b2Vec2(x, y), angle); }
 #endif // LIQUIDFUN_EXTERNAL_LANGUAGE_API
 
 	b2Vec2 p;
